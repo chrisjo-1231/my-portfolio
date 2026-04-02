@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Christian Joseph G. Rubis | Developer Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --primary:#4f46e5;
+    --secondary:#06b6d4;
+    --dark:#0f172a;
+    --light:#f1f5f9;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(120deg,#0f172a,#1e293b);
+    color:white;
+}
+
+/* NAV */
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 40px;
+    position:sticky;
+    top:0;
+    background:rgba(15,23,42,0.8);
+    backdrop-filter:blur(10px);
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+/* HERO */
+.hero{
+    min-height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero img{
+    width:160px;
+    border-radius:50%;
+    border:4px solid var(--secondary);
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:42px;
+    margin:10px 0;
+}
+
+.hero span{
+    color:var(--secondary);
+}
+
+.btn{
+    margin-top:20px;
+    padding:12px 25px;
+    background:linear-gradient(90deg,var(--primary),var(--secondary));
+    border:none;
+    color:white;
+    border-radius:30px;
+    cursor:pointer;
+    text-decoration:none;
+}
+
+/* SECTION */
+.section{
+    padding:60px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+/* PROJECTS */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:rgba(255,255,255,0.05);
+    padding:25px;
+    border-radius:15px;
+    backdrop-filter:blur(10px);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.02);
+}
+
+.card h3{
+    margin-top:0;
+}
+
+.card a{
+    display:inline-block;
+    margin-top:10px;
+    color:var(--secondary);
+    text-decoration:none;
+}
+
+/* SKILLS */
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.skills div{
+    background:linear-gradient(90deg,var(--primary),var(--secondary));
+    margin:8px;
+    padding:10px 18px;
+    border-radius:20px;
+}
+
+/* CONTACT */
+.contact{
+    text-align:center;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:black;
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+
+<div><strong>Christian Rubis</strong></div>
+
+<div>
+<a href="#">Home</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</div>
+
+</nav>
+
+
+<div class="hero">
+
+<img src="profile.jpg">
+
+<h1>Hi, I'm <span>Christian</span></h1>
+
+<p>Web Developer • Laravel Developer • System Developer</p>
+
+<a href="#projects" class="btn">View My Projects</a>
+
+</div>
+
+
+<div class="section" id="projects">
+
+<h2>Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Library Management System</h3>
+<p>Laravel‑based library system with OPAC, barcode scanning, and circulation.</p>
+<a href="#">View Project →</a>
+</div>
+
+<div class="card">
+<h3>SF10 Record System</h3>
+<p>Upload and manage student SF10 records using PHP, MySQL, and Excel import.</p>
+<a href="#">View Project →</a>
+</div>
+
+<div class="card">
+<h3>AI-Powered Student Information System</h3>
+<p>AI-enhanced student information system with automated data processing and analytics.</p>
+<a href="#">View Project →</a>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="section" id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills">
+
+<div>HTML</div>
+<div>CSS</div>
+<div>JavaScript</div>
+<div>PHP</div>
+<div>Laravel</div>
+<div>MySQL</div>
+<div>Arduino</div>
+<div>GitHub</div>
+
+</div>
+
+</div>
+
+
+<div class="section contact" id="contact">
+
+<h2>Contact</h2>
+
+<p>Email: christianjosephrubis.1231@gmail.com</p>
+<p>Phone: 09302874919</p>
+<p>GitHub: https://github.com/chrisjo-1231</p>
+
+</div>
+
+
+<footer>
+
+© 2026 Christian Joseph G. Rubis
+
+</footer>
+
+
+</body>
+</html>
